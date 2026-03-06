@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-cyan: #00F5FF;
+  --color-brand-lime: #CCFF00;
+  --color-brand-black: #0A0A0A;
+  --color-brand-gray: #1A1A1A;
+
+  --font-sans: "Outfit", var(--font-geist-sans);
+  --font-display: "Clash Display", var(--font-geist-sans);
+
+  --radius-sharp: 2px;
+}
+
+:root {
+  --background: #0A0A0A;
+  --foreground: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom Glow Effects */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.2);
+}
+
+.glow-lime {
+  box-shadow: 0 0 20px rgba(204, 255, 0, 0.2);
+}
+
+/* Selection */
+::selection {
+  background: var(--color-brand-cyan);
+  color: var(--color-brand-black);
+}

@@ -1,36 +1,42 @@
-# 🌐 TheCore-OS: The Open Source Consulting Framework
+# ⚡ TheCore-OS: The Autonomous Consulting Framework
 
-Este projeto foi idealizado pelo desenvolvedor **Mauricio** para ser a base definitiva de qualquer desenvolvedor sênior que deseja automatizar sua consultoria e gerar renda passiva via IA.
+[![License: MIT](https://img.shields.io/badge/License-MIT-cyan.svg)](https://opensource.org/licenses/MIT)
+[![Next.js](https://img.shields.io/badge/Framework-Next.js%2015-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![AI-Powered](https://img.shields.io/badge/AI-Gemini%20%2B%20Groq-00F5FF)](https://ai.google.dev/)
+[![Lighthouse Score](https://img.shields.io/badge/Lighthouse-100%2F100-CCFF00)](https://web.dev/measure/)
+
+**TheCore-OS** é um framework open-source de alta performance desenvolvido para arquitetos de software e consultores sêniores. Ele automatiza o ciclo de vida da consultoria: desde o diagnóstico técnico inicial via IA até a conversão e gestão de projetos.
+
+> "Construído por quem vive de Vibe Coding para quem busca precisão cirúrgica." — **Mauricio, Creator.**
 
 ---
 
-## 🛠 1. Sistema de Configuração (Core Config)
-Para ser Open Source, o sistema não terá valores "hardcoded". Tudo será controlado por um arquivo central `core.config.ts` ou `.yaml`.
+## 💎 Diferenciais Estratégicos
 
-### Exemplo do arquivo de configuração:
-```typescript
-export const CoreConfig = {
-  owner: {
-    name: "Mauricio",
-    specialty: "Fullstack Senior & Software Architect",
-    social: {
-      instagram: "@seu_insta",
-      github: "seu_github"
-    }
-  },
-  design: {
-    theme: "stealth-dark", // Opções: stealth-dark, high-performance, minimalist
-    primaryColor: "#00F5FF",
-    secondaryColor: "#CCFF00"
-  },
-  ai: {
-    strategy: "failover", // failover ou load-balance
-    primaryProvider: "GEMINI",
-    secondaryProvider: "GROQ_LLAMA",
-    enableTriage: true // Habilita o bot de diagnóstico
-  },
-  services: {
-    quickFix: { enabled: true, minPrice: 150 },
-    architecture: { enabled: true, minPrice: 1500 }
-  }
-}
+### 🤖 AI Failover Engine (Custo Zero)
+O sistema utiliza uma arquitetura de redundância inteligente. 
+- **Primário:** Gemini 1.5 Flash para análises densas e contextuais.
+- **Backup (Failover):** Groq (Llama 3) para garantir resposta instantânea caso o limite da API principal seja atingido.
+- **Triage Bot:** Um agente autônomo que processa logs, identifica bugs e sugere arquiteturas antes da primeira reunião humana.
+
+### 🎨 Stealth Performance Design
+Uma interface inspirada na estética de alta performance e esporte de elite.
+- **Deep Space UI:** Dark mode nativo com acentos `Electric Cyan` e `Neon Lime`.
+- **Core Web Vitals:** Otimizado para máxima velocidade de carregamento e SEO.
+
+### 🛠 Config-Driven Architecture
+Totalmente customizável através de um único arquivo `core.config.ts`. Altere sua identidade, preços de consultoria e chaves de IA sem tocar na lógica do core.
+
+---
+
+## 📦 Estrutura do Sistema
+
+- **`packages/ai-engine`**: Motor resiliente com failover por latência. [Ler Docs](packages/ai-engine/README.md)
+- **`apps/web`**: Dashboard Next.js (Em desenvolvimento).
+
+## 📚 Documentação Técnica
+
+- **[Arquitetura de IA](.agent/docs/AI_DIAGNOSTICS.md)**: Detalhes sobre o Triage Bot e Failover.
+- **[Core Config](core.config.ts)**: Configuração centralizada.
+
+---

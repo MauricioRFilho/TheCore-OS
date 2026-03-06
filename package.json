@@ -1,0 +1,27 @@
+{
+  "name": "thecore-os",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-cyan.svg)](https://opensource.org/licenses/MIT)\r [![Next.js](https://img.shields.io/badge/Framework-Next.js%2015-black?style=flat&logo=next.js)](https://nextjs.org/)\r [![AI-Powered](https://img.shields.io/badge/AI-Gemini%20%2B%20Groq-00F5FF)](https://ai.google.dev/)\r [![Lighthouse Score](https://img.shields.io/badge/Lighthouse-100%2F100-CCFF00)](https://web.dev/measure/)",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauricioRFilho/TheCore-OS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauricioRFilho/TheCore-OS/issues"
+  },
+  "homepage": "https://github.com/MauricioRFilho/TheCore-OS#readme"
+}

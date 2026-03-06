@@ -1,0 +1,13 @@
+# Antigravity Kit
+.agents
+.agent
+.gemini
+
+# Node.js
+node_modules
+.npm
+package-lock.json
+
+# Environment
+.env.local
+.env
